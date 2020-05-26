@@ -1,0 +1,27 @@
+n=int(input())
+l=list(map(int,input().split()))
+asum=n*(n+1)//2 #The expected sum 
+s=sum(l)  #the actual sum of array
+a=(n-(asum-s))
+print("Repeated element:",a)
+print("Missing element:",asum-(s-a))
+
+-------------------------------
+The array contains a element missing and one element repeating.
+The array consists of sorted increasing natural numbers.
+Find them:
+The logic here is very simple and understandable
+case 1:
+sanple input:
+5
+1 2 2 3 4 
+sample output:
+Repeated element: 2
+Missing element: 5
+case 2:
+sample input:
+5
+1 2 3 4 4
+sample output:
+Repeated element: 4
+Missing element: 5
