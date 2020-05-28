@@ -1,0 +1,14 @@
+s=input()
+for i in s:
+    if i.isalpha():
+        print(i,end='')
+__________________________________
+sample input:
+harsha$#%&%^&
+sample output: 
+harsha
+___________________________________
+sample input:
+8hduGHS%76$^8
+sample output:
+hduGHS
