@@ -1,0 +1,14 @@
+s=input().strip()
+print("String after deleting vowels:",end=' ')
+r=''
+for i in s:
+    if i=='a' or i=='A' or i=='e' or i=='E' or i=='i' or i=='I' or i=='o' or i=='O' or i=='U' or i=='U':
+        pass
+    else:
+        print(i,end='')
+        
+ ________________________________________________________________________
+ sample input:
+ hello
+ sample output:
+String after deleting vowels: hll
