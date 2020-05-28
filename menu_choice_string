@@ -1,0 +1,33 @@
+n=int(input())
+s=''
+for i in range(n):
+    l=list(map(str,input().split()))
+    if l[0]=='1':
+        s+=l[1]
+    elif l[0]=='2':
+        s=s[0:len(s)-int(l[1])]
+    else:
+        print(s)
+___________________________________________
+sample input:
+5
+1 abc
+2 2
+3
+1 xy
+3
+sample output:
+a
+axy
+___________________________________________
+sample input:
+5
+1 abc
+2 2
+3
+1 oiu
+3 2
+sample output:
+a
+aiou
+
