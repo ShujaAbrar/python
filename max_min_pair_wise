@@ -20,3 +20,9 @@ sample input:
 2 12 87 3
 sample output:
 2 87 3 12
+__________________________________________________
+sample input:
+2
+345 12
+sample output:
+12 345 
