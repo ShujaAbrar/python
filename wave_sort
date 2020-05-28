@@ -1,0 +1,19 @@
+t=int(input())
+for i in range(t):
+    n=int(input())
+    l=list(map(int,input().split()))
+    for j in range(0,n,2):
+        x=l[j:j+2]
+        if len(x)==2:
+            print(max(x),min(x),sep=' ',end=' ')
+        else:
+            print(max(x),end=' ')
+    print()
+_____________________________________________________________
+sample input:
+1
+5
+1 2 3 4 5
+
+sample output:
+2 1 4 3 5 
