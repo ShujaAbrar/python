@@ -1,0 +1,17 @@
+t=int(input())
+for i in range(t):
+    c=0
+    s=input().strip()
+    for j in range(len(s)-1):
+        if s[j]+s[j+1]=="AA" or s[j]+s[j+1]=="BB":
+            c+=1
+    print(c)
+________________________________________________
+sample input:
+2
+AAABBBB
+ABABABAAA
+
+sample output:
+5
+2
