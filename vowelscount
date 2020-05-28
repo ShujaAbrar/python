@@ -1,0 +1,15 @@
+t=int(input())
+for  i in range(t):
+    s=input().strip()
+    r=''
+    for j in s:
+        if j=='a' or j=='e'or j=='i' or j=='o' or j=='u':
+            r+=j
+    print(len(r))
+    
+    ____________________________________________________________
+    sample input:
+    1
+    bashes
+    sample output:
+    2
