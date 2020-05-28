@@ -1,0 +1,14 @@
+t=int(input())
+for i in range(t):
+    s=input().strip()
+    r=s[::-1]
+    if r==s:
+        print("YES")
+    else:
+        print("NO")
+ _________________________________________
+sample input:
+1
+madam
+sample output:
+YES
