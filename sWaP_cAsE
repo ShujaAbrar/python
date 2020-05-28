@@ -1,0 +1,13 @@
+s=input()
+r=''
+for i in s:
+    if i.islower():
+        r+=(i.upper())
+    else:
+        r+=(i.lower())
+print(r)
+________________________
+sample input:
+coLLeGe
+sample output:
+COllEgE
