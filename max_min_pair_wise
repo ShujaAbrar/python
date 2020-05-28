@@ -1,0 +1,22 @@
+n=int(input())
+l=list(map(int,input().split()))
+l.sort()
+x=len(l)
+r=[]
+if x%2==0:
+    for i in range(x//2):
+        r.extend([l[0],l[len(l)-1]])
+        l=l[1:len(l)-1]
+else:
+    for i in range(x//2):
+        r.extend([l[0],l[len(l)-1]])
+        l=l[1:len(l)-1]
+    r.append(max(l))
+for j in r:
+    print(j,end=" ")
+__________________________________________________
+sample input:
+4
+2 12 87 3
+sample output:
+2 87 3 12
